@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringWithSecurityApplication {
+public class ExistingSecurityCookieBased {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringWithSecurityApplication.class, args);
+        SpringApplication.run(ExistingSecurityCookieBased.class, args);
     }
 
 }

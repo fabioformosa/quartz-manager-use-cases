@@ -19,6 +19,7 @@
 
   <modules>
     <module>simply-spring</module>
+    <module>existing-security-cookie-based</module>
   </modules>
 
 

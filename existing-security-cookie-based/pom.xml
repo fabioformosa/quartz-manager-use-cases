@@ -9,11 +9,11 @@
     </parent>
 
     <groupId>it.fabioformosa.labs</groupId>
-    <artifactId>spring-with-security</artifactId>
+    <artifactId>existing-security-cookie-based</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-with-security</name>
+    <name>existing-security-cookie-based</name>
 
-    <description>spring-with-security</description>
+    <description>Host Project with existing spring security based on cookie</description>
 
     <properties>
         <java.version>17</java.version>
