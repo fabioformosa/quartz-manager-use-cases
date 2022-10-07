@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>simply-spring</artifactId>
+    <artifactId>simply-spring-no-security</artifactId>
     <packaging>jar</packaging>
 
-    <name>simply-spring</name>
+    <name>simply-spring-no-security</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -21,10 +21,6 @@
         <dependency>
             <groupId>it.fabioformosa.quartz-manager</groupId>
             <artifactId>quartz-manager-starter-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>it.fabioformosa.quartz-manager</groupId>
-            <artifactId>quartz-manager-starter-security</artifactId>
         </dependency>
         <dependency>
             <groupId>it.fabioformosa.quartz-manager</groupId>

@@ -19,6 +19,7 @@
 
   <modules>
     <module>simply-spring</module>
+    <module>simply-spring-no-security</module>
     <module>existing-security-cookie-based</module>
   </modules>
 
@@ -32,6 +33,11 @@
       <dependency>
         <groupId>it.fabioformosa.quartz-manager</groupId>
         <artifactId>quartz-manager-starter-api</artifactId>
+        <version>3.1.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>it.fabioformosa.quartz-manager</groupId>
+        <artifactId>quartz-manager-starter-security</artifactId>
         <version>3.1.1-SNAPSHOT</version>
       </dependency>
       <dependency>
