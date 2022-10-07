@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.7.4</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <groupId>it.fabioformosa.labs</groupId>
+  <artifactId>quartz-manager-use-cases</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>quartz-manager-use-cases</name>
+  <url>http://maven.apache.org</url>
+
+  <modules>
+    <module>simply-spring</module>
+  </modules>
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>it.fabioformosa.quartz-manager</groupId>
+        <artifactId>quartz-manager-starter-api</artifactId>
+        <version>3.1.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>it.fabioformosa.quartz-manager</groupId>
+        <artifactId>quartz-manager-starter-ui</artifactId>
+        <version>3.1.1-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.9.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
