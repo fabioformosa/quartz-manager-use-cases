@@ -22,5 +22,9 @@
             <groupId>it.fabioformosa.quartz-manager</groupId>
             <artifactId>quartz-manager-starter-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>it.fabioformosa.quartz-manager</groupId>
+            <artifactId>quartz-manager-starter-ui</artifactId>
+        </dependency>
     </dependencies>
 </project>
