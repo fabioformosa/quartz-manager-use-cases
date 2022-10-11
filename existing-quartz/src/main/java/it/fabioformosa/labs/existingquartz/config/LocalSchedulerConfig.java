@@ -3,7 +3,6 @@ package it.fabioformosa.labs.existingquartz.config;
 import it.fabioformosa.quartzmanager.api.scheduler.AutowiringSpringBeanJobFactory;
 import org.quartz.spi.JobFactory;
 import org.springframework.beans.factory.config.PropertiesFactoryBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +22,6 @@ public class LocalSchedulerConfig {
         return jobFactory;
     }
 
-    @ConditionalOnResource(resources = {"quartz.properties"})
     @Bean
     public Properties quartzProperties() throws IOException {
         PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();

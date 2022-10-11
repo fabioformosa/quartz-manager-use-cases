@@ -22,6 +22,7 @@
     <module>simply-spring-no-security</module>
     <module>existing-security-cookie-based</module>
     <module>existing-quartz</module>
+    <module>existing-quartz-and-storage</module>
   </modules>
 
 
