@@ -5,6 +5,7 @@ import org.quartz.spi.JobFactory;
 import org.springframework.beans.factory.config.PropertiesFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
@@ -27,6 +28,7 @@ public class LocalSchedulerConfig {
         return propertiesFactoryBean.getObject();
     }
 
+    @Primary
     @Bean
     public SchedulerFactoryBean schedulerFactoryBean( JobFactory jobFactory, Properties quartzProperties) {
         SchedulerFactoryBean factory = new SchedulerFactoryBean();
