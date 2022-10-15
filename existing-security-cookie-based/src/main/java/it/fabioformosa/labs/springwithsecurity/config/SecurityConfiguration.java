@@ -1,4 +1,4 @@
-package it.fabioformosa.labs.springwithsecurity;
+package it.fabioformosa.labs.springwithsecurity.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
