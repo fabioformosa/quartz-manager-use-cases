@@ -38,23 +38,4 @@ public class LocalSchedulerConfig {
         return factory;
     }
 
-//    @Bean(name = "primaryScheduler")
-//    public SchedulerFactoryBean localSchedulerFactoryBean( JobFactory jobFactory, Properties quartzProperties) {
-//        SchedulerFactoryBean factory = new SchedulerFactoryBean();
-//        factory.setJobFactory(jobFactory);
-//        factory.setQuartzProperties(quartzProperties);
-//        factory.setAutoStartup(true);
-//        return factory;
-//    }
-//
-//    @Bean(name = "secondaryScheduler")
-//    public SchedulerFactoryBean secondaryScheduler(JobFactory jobFactory, Properties quartzProperties) {
-//        SchedulerFactoryBean factory = new SchedulerFactoryBean();
-//        factory.setJobFactory(jobFactory);
-//        factory.setQuartzProperties(quartzProperties);
-//        factory.setAutoStartup(true);
-//        return factory;
-//    }
-
-
 }
