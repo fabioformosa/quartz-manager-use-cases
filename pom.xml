@@ -29,6 +29,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <quartz-manager.version>4.0.5</quartz-manager.version>
   </properties>
 
   <dependencyManagement>
@@ -36,22 +37,22 @@
       <dependency>
         <groupId>it.fabioformosa.quartz-manager</groupId>
         <artifactId>quartz-manager-starter-api</artifactId>
-        <version>4.0.4</version>
+        <version>${quartz-manager.version}</version>
       </dependency>
       <dependency>
         <groupId>it.fabioformosa.quartz-manager</groupId>
         <artifactId>quartz-manager-starter-security</artifactId>
-        <version>4.0.4</version>
+        <version>${quartz-manager.version}</version>
       </dependency>
       <dependency>
         <groupId>it.fabioformosa.quartz-manager</groupId>
         <artifactId>quartz-manager-starter-ui</artifactId>
-        <version>4.0.4</version>
+        <version>${quartz-manager.version}</version>
       </dependency>
       <dependency>
         <groupId>it.fabioformosa.quartz-manager</groupId>
         <artifactId>quartz-manager-starter-persistence</artifactId>
-        <version>4.0.4</version>
+        <version>${quartz-manager.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
