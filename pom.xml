@@ -29,7 +29,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <quartz-manager.version>4.0.5</quartz-manager.version>
+    <quartz-manager.version>4.0.6</quartz-manager.version>
   </properties>
 
   <dependencyManagement>
