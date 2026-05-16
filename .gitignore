@@ -1,3 +1,5 @@
 /.idea/
 /simply-spring/target/
 /simply-spring-no-security/target/
+/simply-spring/simply-spring.iml
+/simply-spring-no-security/simply-spring-no-security.iml
