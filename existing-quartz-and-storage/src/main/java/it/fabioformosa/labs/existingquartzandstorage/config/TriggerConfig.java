@@ -1,12 +1,11 @@
 package it.fabioformosa.labs.existingquartzandstorage.config;
 
+import jakarta.annotation.PostConstruct;
 import it.fabioformosa.labs.existingquartzandstorage.jobs.SimpleJob;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-
-import javax.annotation.PostConstruct;
 
 @Slf4j
 @Configuration

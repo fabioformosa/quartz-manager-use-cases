@@ -19,13 +19,10 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .csrf().disable()
-                .authorizeRequests()
-                .anyRequest()
-                .authenticated().and()
-                .httpBasic()
-                .authenticationEntryPoint(authenticationEntryPoint);
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .csrf(csrf -> csrf.disable())
+                .authorizeHttpRequests(authorize -> authorize.anyRequest().authenticated())
+                .httpBasic(httpBasic -> httpBasic.authenticationEntryPoint(authenticationEntryPoint));
         return http.build();
     }
 
