@@ -10,7 +10,7 @@
 
 [Quartz Manager](https://github.com/fabioformosa/quartz-manager) is a Spring Boot library and standalone web app that adds REST API and dashboard management to [Quartz Scheduler](https://www.quartz-scheduler.org/).
 
-This repository contains runnable use cases for the integration paths described in the [Quartz Manager README](https://github.com/fabioformosa/quartz-manager#choose-your-path). Use it as a practical reference when deciding which Quartz Manager modules to import and how to wire them into a Spring Boot application.
+This repository contains runnable Spring Boot 4.0.x use cases for the integration paths described in the [Quartz Manager README](https://github.com/fabioformosa/quartz-manager#choose-your-path). Use it as a practical reference when deciding which Quartz Manager modules to import and how to wire them into a Spring Boot application.
 
 The examples are intentionally kept as separate applications, so each folder shows one focused setup instead of mixing all options into a single sample.
 
@@ -108,10 +108,10 @@ admin / admin
 
 ## Configuration
 
-The parent project manages the Quartz Manager dependency version used by these examples:
+The parent project targets Java 21 and Spring Boot 4.0.x. It manages the Quartz Manager dependency version used by these examples:
 
 ```xml
-<quartz-manager.version>4.0.9</quartz-manager.version>
+<quartz-manager.version>5.0.1</quartz-manager.version>
 ```
 
 Each module imports only the starters needed by that use case:
@@ -148,10 +148,6 @@ quartz-manager.persistence.quartz.datasource.user=quartzmanagerusecase
 quartz-manager.persistence.quartz.datasource.password=quartzmanagerusecase
 ```
 
+For Spring Boot 3.5.x compatibility checks, see [quartz-manager-compatibility-cases](https://github.com/fabioformosa/quartz-manager-compatibility-cases).
+
 For the production-facing library documentation, supported modules, current limitations, and roadmap, see the [Quartz Manager README](https://github.com/fabioformosa/quartz-manager).
-
-## Out Of Scope
-
-This repository documents the current use cases only.
-
-Upgrading these examples to newer Quartz Manager or Spring Boot versions is intentionally out of scope for this README update and will be handled separately.

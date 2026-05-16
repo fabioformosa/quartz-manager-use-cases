@@ -1,9 +1,9 @@
 package it.fabioformosa.labs.springwithsecurity.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -15,7 +15,7 @@ public class SecurityConfiguration {
     @Autowired
     private MyBasicAuthenticationEntryPoint authenticationEntryPoint;
 
-    @Order(SecurityProperties.BASIC_AUTH_ORDER)
+    @Order(Ordered.LOWEST_PRECEDENCE - 5)
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
